@@ -1,11 +1,20 @@
-import './App.scss';
+import styles from './App.module.scss';
+import { Button, Card } from './components';
+import LinksForm from './components/LinksForm/LinksForm';
+import { withLayout } from './layout/Layout';
 
-function App() {
+const App = () => {
 	return (
-		<>
-			<h1>Hello Vite</h1>
-		</>
+		<div className={styles.wrapper}>
+			<Card className={styles.card} color='blue'>
+				<LinksForm />
+				<div className={styles.buttons}>
+					<Button appearance='ghost'>Пред просмотр</Button>
+					<Button appearance='ghost'>Скачать документ</Button>
+				</div>
+			</Card>
+		</div>
 	);
-}
+};
 
-export default App;
+export default withLayout(App);

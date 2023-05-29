@@ -1,0 +1,36 @@
+@use './styles' as *;
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+
+	.card {
+		width: 550px;
+		padding: 20px;
+
+		.buttons {
+			display: flex;
+			gap: 10px;
+			justify-content: flex-end;
+			margin-top: 40px;
+		}
+	}
+}
+
+@include for-size(phone) {
+	.wrapper {
+		padding: 10px;
+
+		.card {
+			width: 100vw;
+
+			.buttons {
+				justify-content: center;
+			}
+		}
+	}
+}
