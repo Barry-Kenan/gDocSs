@@ -1,0 +1,48 @@
+@use '../../styles' as *;
+
+.button {
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 10px;
+	font-size: 14px;
+	text-align: center;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.2s;
+
+	&.primary {
+		color: $white;
+		background-color: $primary;
+
+		&:hover {
+			background-color: $primary-hover;
+		}
+	}
+
+	&.ghost {
+		color: $primary;
+		background: none;
+		border: 1px solid $primary;
+
+		&:hover {
+			color: $white;
+			background-color: $primary;
+		}
+	}
+
+	&:disabled,
+	&[disabled] {
+		color: $white;
+		background-color: $gray;
+		border: 1px solid $gray-dark;
+		cursor: not-allowed;
+
+		&:hover {
+			color: $white;
+			background-color: $gray;
+			border: 1px solid $gray-dark;
+			cursor: not-allowed;
+		}
+	}
+}
