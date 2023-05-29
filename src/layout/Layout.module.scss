@@ -1,0 +1,23 @@
+@use '../styles' as *;
+
+.wrapper {
+	display: grid;
+	grid-template:
+		'header' auto
+		'body' 1fr
+		'footer' auto;
+	gap: 10px;
+	min-height: 100vh;
+
+	.header {
+		grid-area: header;
+	}
+
+	.body {
+		grid-area: body;
+	}
+
+	.footer {
+		grid-area: footer;
+	}
+}

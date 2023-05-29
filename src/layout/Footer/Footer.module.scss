@@ -1,0 +1,19 @@
+@use '../../styles' as *;
+
+.footer {
+	padding: 15px;
+	color: $white;
+	text-align: center;
+	background: $primary;
+
+	@include font(18, 22);
+
+	a {
+		color: $white;
+		text-decoration: none;
+
+		&:hover {
+			color: $gray-light;
+		}
+	}
+}
