@@ -1,0 +1,35 @@
+@use '../../styles' as *;
+
+.inputWrapper {
+	position: relative;
+
+	.input {
+		width: 100%;
+		padding: 7px 15px;
+		color: $black;
+		font-family: $roboto;
+		background: $white;
+		border: none;
+		border-radius: 5px;
+		outline-color: $primary;
+		box-shadow: 0 4px 4px rgb(0 0 0 / 5%);
+
+		@include font(16, 22, 500);
+
+		&::placeholder {
+			color: $gray;
+		}
+
+		&.error {
+			border: 1px solid $red;
+			@include font(14, 18, 500);
+		}
+	}
+
+	.errorMessage {
+		position: absolute;
+		bottom: -20px;
+		left: 5px;
+		color: $red;
+	}
+}
