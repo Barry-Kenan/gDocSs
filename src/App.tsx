@@ -34,7 +34,7 @@ const App = () => {
 						onClick={() => setModalActive(true)}
 						disabled={!previewUrl}
 					>
-						Пред просмотр
+						Предварительный просмотр
 					</Button>
 					<Button appearance='ghost' disabled={!downloadUrl}>
 						<Link
@@ -43,7 +43,7 @@ const App = () => {
 								[styles.disabled]: downloadUrl == ''
 							})}
 						>
-							Скачать документ
+							Получить файл
 						</Link>
 					</Button>
 				</div>
