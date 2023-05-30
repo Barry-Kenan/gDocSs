@@ -8,6 +8,7 @@
 		"build": "tsc && vite build",
 		"lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
 		"preview": "vite preview",
+		"prepare": "husky install",
 		"stylelint": "stylelint \"**/*.scss\" --fix"
 	},
 	"dependencies": {
@@ -29,6 +30,7 @@
 		"eslint": "^8.38.0",
 		"eslint-plugin-react-hooks": "^4.6.0",
 		"eslint-plugin-react-refresh": "^0.3.4",
+		"husky": "^8.0.3",
 		"sass": "^1.62.1",
 		"stylelint": "^15.6.2",
 		"stylelint-config-rational-order": "^0.1.2",
