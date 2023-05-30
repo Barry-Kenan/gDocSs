@@ -23,7 +23,6 @@ const LinksForm: FC<LinksFormProps> = ({ className, ...props }) => {
 		const sheetId = getIdFromUrl(formData.sheetLink);
 		const docId = getIdFromUrl(formData.docLink);
 		const data: IGoogleRequest = { docId, sheetId };
-		console.log({ sheetId, docId });
 		postUrls(data);
 		reset();
 	};
