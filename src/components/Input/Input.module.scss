@@ -22,6 +22,7 @@
 
 		&.error {
 			border: 1px solid $red;
+
 			@include font(14, 18, 500);
 		}
 	}
